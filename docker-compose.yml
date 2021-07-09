@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  app:
+    build: ./docker
+    container_name: legacy-react
+    ports:
+      - "11000:80"
+    volumes:
+      - .:/var/www/html
